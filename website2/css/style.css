@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* Hero sectie */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text overlays */
+.software-developer {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 40px;
+}
+
+.bio {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translateX(-50%);
+    text-align: left;
+    font-size: 18px;
+}
+
+.bio h2,
+.skills h2,
+.projecten h2,
+.contacten h2 {
+    font-weight: normal;
+}
+
+.skills {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translateX(-50%);
+    text-align: left;
+    font-size: 21px;
+}
+
+.projecten {
+    position: absolute;
+    top: 40%;
+    left: 62%;
+    transform: translateX(-50%);
+    text-align: left;
+    font-size: 23px;
+}
+
+.contacten {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translateX(-50%);
+    text-align: left;
+    font-size: 20px;
+}
+
+/* Social media icons */
+.socials2 {
+    position: absolute;
+    right: 200px;
+    top: 700px;
+}
+
+.overlay-image {
+    width: 180px;
+    height: auto;
+}
+
+
+/* Email display */
+.gmail,
+.gmail1,
+.gmail2,
+.gmail3 {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    margin-left: 450px;
+}
+
+.gmail {
+    top: 680px;
+}
+
+.gmail1 {
+    top: 4100px;
+}
+
+.gmail2,
+.gmail3 {
+    top: 3250px;
+}
+
+/* Navigation */
+.floating-nav {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 20px 360px;
+    background: white;
+    border-radius: 999px;
+    z-index: 1000;
+}
+
+.ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nav-item:hover {
+    opacity: 1;
+    color: grey;
+}
+
+
+@media (max-width: 768px) {
+    
+    .floating-nav {
+        padding: 10px 16px;
+        max-width: calc(100vw - 20px);
+        top: 5px;
+        gap: 10px;
+    }
+
+    .ul {
+        gap: 12px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+
+    
+    .hero {
+        background-size: contain;
+        background-position: center top;
+        background-color: black;
+    }
+
+    
+    .software-developer {
+        font-size: 15px;
+    }
+
+    .bio,
+    .skills,
+    .projecten,
+    .contacten {
+        font-size: 5px;
+    }
+
+    
+    .socials2 {
+        top: 200px;
+        right: 20px;
+    }
+
+    .overlay-image {
+        width: 120px;
+    }
+
+    
+    .gmail {
+        font-size: 5px;
+        margin-left: 130px;
+        top: 21%;
+    }
+
+    .gmail1 {
+        font-size: 5px;
+        margin-left: 130px;
+        top: 1160px;
+    }
+
+    .gmail2,
+    .gmail3 {
+        font-size: 5px;
+        margin-left: 130px;
+        top: 920px;
+    }
+
+    
+    .link-pinkgoose {
+        font-size: 5px;
+        margin-left: 222px;
+        top: 18%;
+    }
+
+    .link-pinkgoose1 {
+        font-size: 5px;
+        margin-left: 222px;
+        top: 895px;
+    }
+
+    .link-pinkgoose2,
+    .link-pinkgoose3 {
+        font-size: 5px;
+        margin-left: 222px;
+        top: 655px;
+    }
+
+    .link-pinkgoose4 {
+        font-size: 5px;
+        margin-left: 222px;
+        top: 410px;
+    }
+
+    .link-mastermind {
+        font-size: 5px;
+        margin-left: 300px;
+        top: 18%;
+    }
+
+    .link-mastermind1 {
+        font-size: 5px;
+        margin-left: 300px;
+        top: 895px;
+    }
+
+    .link-mastermind2,
+    .link-mastermind3 {
+        font-size: 5px;
+        margin-left: 300px;
+        top: 655px;
+    }
+
+    .link-mastermind4 {
+        font-size: 5px;
+        margin-left: 300px;
+        top: 410px;
+    }
+}
+
+
